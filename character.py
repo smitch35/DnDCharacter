@@ -5,10 +5,16 @@
 # Also you will get to select your class and origin which will tell you which status you may want to focus on
 # We will also add versioning listing to explain when a new feature may get added
 
+
+
 print("Welcome to the Character Creator v0.1")
+# Request the player to give their character a name.
 first_name = input("Please enter your character's first name: ")
 last_name = input("Please enter your character's last name: ")
 print(f"Your character's name is {first_name} {last_name}.")
+
+
+#Let the player choose a class.
 print("Next select your character class from the following options: Barbarian, Wizard, Paladin")
 class_choice = input("Please enter the name of your chosen class: ")
 class_choice = class_choice.lower()
@@ -21,6 +27,8 @@ elif class_choice == "paladin":
 else:
     print("Invalid class choice. Please restart the program and choose a valid class.")
 print("Now it is time to select your characters origin from the following options: Acolyte, Criminal, Sage, Soldier")
+
+#Origins are something new to me as far as DnD goes so I've added them but they don't seem to do much yet.
 origin_choice = input("Please enter the name of your chosen origin: ")
 origin_choice = origin_choice.lower()
 if origin_choice == "acolyte":
@@ -34,14 +42,20 @@ elif origin_choice == "soldier":
 else:
     print("Invalid origin choice. Please restart the program and choose a valid origin.")
 
+#Start adding stat info.
 print("Now it's time to assign your character's stats.")
 print("You can either use the preset stats or roll 4d6 and drop the lowest die.")
 stat_choice = input("Type 'preset' to use preset stats or 'roll' to roll for stats: ")
 stat_choice = stat_choice.lower()
 if stat_choice == "preset":
     print("Where would you like to assign the following preset stat numbers? 15, 14, 13, 12, 10, 8")
-    input("Please enter the stat assignments in the format 'Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma': ")
-    print("Preset stats assigned.")
+    stat_15 = input("Please enter the stat you want for the 15 in the format 'Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma': ")
+    stat_14 = input("Please enter the stat you want for the 14: ")
+    stat_13 = input("Please enter the stat you want for the 13: ")
+    stat_12 = input("Please enter the stat you want for the 12: ")
+    stat_10 = input("Please enter the stat you want for the 10: ")
+    stat_8 = input("Please enter the stat you want for the 8: ")
+    print(f"Preset stats assigned.  Your stats are as Follows: {stat_15} = 15, {stat_14} = 14, {stat_13} = 13, {stat_12} = 12, {stat_10} = 10, {stat_8} = 8")
 elif stat_choice == "roll":
     print("To roll for stats, please visit an online dice roller that supports rolling 4d6 and dropping the lowest die.  For example goto google.com and search for d6 roller, or use your own dice!")
     print("After rolling, assign the resulting numbers to your character's stats.")
