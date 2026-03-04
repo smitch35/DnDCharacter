@@ -16,7 +16,7 @@ def dice_rolls():
     stat_6 = random.randint(1,6) + random.randint(1,6) + random.randint(1,6) + random.randint(1,6)
 
     for stat in [stat_1, stat_2, stat_3, stat_4, stat_5, stat_6]:
-        choice_stat = input(f'Where do you want to assign {stat_1}?  Choices are Str, Dex, Con, Int, Wiz, Cha')
+        choice_stat = input(f'Where do you want to assign {stat}?  Choices are Str, Dex, Con, Int, Wiz, Cha: ')
         if choice_stat == 'Str':
             stat = str_stat
         elif choice_stat == 'Dex':
@@ -29,6 +29,8 @@ def dice_rolls():
             stat = wiz_stat
         elif choice_stat == 'Cha':
             stat = cha_stat    
+
+    print(f"You've set the following stats: Str = {str_stat}, Dex = {dex_stat}, Con = {con_stat}, Int = {int_stat}, Wiz = {wiz_stat}, Cha = {cha_stat}")
 
     return str_stat, dex_stat, con_stat, int_stat, wiz_stat, cha_stat
 
