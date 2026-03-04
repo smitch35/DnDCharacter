@@ -9,3 +9,13 @@ def class_type():
         print("You have chosen Paladin! Focus on Strength and Charisma.")
     else:
         print("Invalid class choice. Please restart the program and choose a valid class.")
+
+    class_file = open('class.txt','w')
+
+    class_file.write(f'{class_choice}\n')
+
+    class_file.close()
+
+
+if __name__ == '__main__':
+    class_type()

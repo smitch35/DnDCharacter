@@ -12,3 +12,6 @@ def class_origin():
         print("You have chosen Soldier! Focus on Strength and Constitution.")
     else:
         print("Invalid origin choice. Please restart the program and choose a valid origin.")
+
+if __name__ == '__main__':
+    class_origin()

@@ -6,6 +6,8 @@ import character_stats
 
 def main():
 
+    print("This is my Dungeons and Dragons character creator program.  It is a first version.")
+
     input("Welcome to Sean's Python based Dungeons and Dragons Character creator!  Press Enter to continue!")
 
     character_name.name()
