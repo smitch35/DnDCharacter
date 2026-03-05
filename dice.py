@@ -1,5 +1,4 @@
 import random
-import character_stats
 
 DICE_ART = {
     1: (
@@ -97,5 +96,5 @@ def roll_dice(num_dice):
 roll_results = roll_dice(num_dice)
 dice_face_diagram = generate_dice_faces_diagram(roll_results)
 
-print(f"\n{dice_face_diagram}")
+#print(f"\n{dice_face_diagram}")
 
