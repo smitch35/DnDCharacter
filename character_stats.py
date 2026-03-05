@@ -11,8 +11,7 @@ cha_stat = 0
 def dice_rolls():
     num_dice = 6
     stat_1 = dice.roll_dice(num_dice)
-    print(f"\n{dice.dice_face_diagram}")
-    stat1_total = stat_1[0] + stat_1[1] + stat_1[2] + stat_1[3] + stat_1[4] + stat_1[5]
+    stat1_total = int(stat_1[0] + stat_1[1] + stat_1[2] + stat_1[3] + stat_1[4] + stat_1[5])
     stat_2 = dice.roll_dice(num_dice)
     stat2_total = stat_2[0] + stat_2[1] + stat_2[2] + stat_2[3] + stat_2[4] + stat_2[5]
     stat_3 = dice.roll_dice(num_dice)
