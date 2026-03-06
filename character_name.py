@@ -6,8 +6,8 @@ def name():
 
     name_file = open('charactername.txt','w')
 
-    name_file.write(f'{first_name}\n')
-    name_file.write(f'{last_name}\n')
+    name_file.write(f'Your first name is: {first_name}\n')
+    name_file.write(f'Your last name is: {last_name}\n')
 
     name_file.close()
 

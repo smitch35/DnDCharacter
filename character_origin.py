@@ -14,7 +14,7 @@ def class_origin():
         print("Invalid origin choice. Please restart the program and choose a valid origin.")
 
     origin_file = open('origin.txt', 'w')
-    origin_file.write(f'{origin_choice}\n')
+    origin_file.write(f'This is your background origin: {origin_choice}.  Use this to help design your character story!\n')
 
 if __name__ == '__main__':
     class_origin()

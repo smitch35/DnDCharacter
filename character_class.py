@@ -12,7 +12,7 @@ def class_type():
 
     class_file = open('class.txt','w')
 
-    class_file.write(f'{class_choice}\n')
+    class_file.write(f'You have chosen the {class_choice} class!  May your journey be grand!\n')
 
     class_file.close()
 

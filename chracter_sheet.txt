@@ -1,3 +1,7 @@
+Test
+Test
+barbarian
+acolyte
 Str = 24
 Dex = 23
 Int = 21
