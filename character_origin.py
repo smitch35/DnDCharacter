@@ -13,5 +13,8 @@ def class_origin():
     else:
         print("Invalid origin choice. Please restart the program and choose a valid origin.")
 
+    origin_file = open('origin.txt', 'w')
+    origin_file.write(f'{origin_choice}\n')
+
 if __name__ == '__main__':
     class_origin()

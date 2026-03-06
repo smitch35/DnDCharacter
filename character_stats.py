@@ -47,12 +47,12 @@ def dice_rolls():
     print(f"You've set the following stats: Str = {str_stat}, Dex = {dex_stat}, Con = {con_stat}, Int = {int_stat}, Wiz = {wiz_stat}, Cha = {cha_stat}")
 
     stats_file = open('stats.txt', 'w')
-    stats_file.write(f'{str_stat}\n')
-    stats_file.write(f'{dex_stat}\n')
-    stats_file.write(f'{int_stat}\n')
-    stats_file.write(f'{con_stat}\n')
-    stats_file.write(f'{wiz_stat}\n')
-    stats_file.write(f'{cha_stat}\n')
+    stats_file.write(f'Str = {str_stat}\n')
+    stats_file.write(f'Dex = {dex_stat}\n')
+    stats_file.write(f'Int = {int_stat}\n')
+    stats_file.write(f'Con = {con_stat}\n')
+    stats_file.write(f'Wiz = {wiz_stat}\n')
+    stats_file.write(f'Cha = {cha_stat}\n')
     stats_file.close()
 
 
